@@ -171,8 +171,6 @@ public class ReentrantRedisLock implements Lock, java.io.Serializable{
 
     }
 
-
-
     public ReentrantRedisLock(String key,RedisTemplate redisTemplate){
         sync = new NonfairSync(key,redisTemplate);
     }
